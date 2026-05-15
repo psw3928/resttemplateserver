@@ -6,7 +6,7 @@ on:
       - main
 
 env:
-  HARBOR_REGISTRY: 210.90.24.172:8080
+  HARBOR_REGISTRY: 210.90.24.172:8080 
   HARBOR_PROJECT: restproject
   STUDENT_ID: psw3928
   IMAGE_NAME: resttemplateserver
