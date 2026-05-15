@@ -53,7 +53,7 @@ jobs:
           context: .
           push: true
           tags: |
-            ${{ env.HARBOR_REGISTRY }}/${{ env.HARBOR_PROJECT }}/${{ env.STUDENT_ID }}/${{ env.IMAGE_NAME }}:${{ steps.meta.outputs.tag }}
+            ${{ env.HARBOR_REGISTRY }}/${{ env.HARBOR_PROJECT }}/${{ env.STUDENT_ID }}/${{ env.IMAGE_NAME }}:${{ github.run_number }}
             ${{ env.HARBOR_REGISTRY }}/${{ env.HARBOR_PROJECT }}/${{ env.STUDENT_ID }}/${{ env.IMAGE_NAME }}:latest
 
   update-manifest:
